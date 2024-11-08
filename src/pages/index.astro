@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclutón 2025</title>
+    <style>
+		/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4B0082; /* Fondo morado */
+    color: #FFA500; /* Texto naranja */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Título principal */
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    animation: slideInFromLeft 2s ease-in-out;
+}
+
+/* Año */
+.year {
+    font-size: 5rem;
+    font-weight: 800;
+    color: #FFA500;
+    animation: zoomIn 2s ease-in-out;
+}
+
+/* Texto "Próximamente" */
+.coming-soon {
+    font-size: 1.5rem;
+    color: #FF8C42;
+    margin: 1rem 0;
+    animation: pulse 1.5s infinite;
+}
+
+/* Botón CTA */
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #00C853; /* Botón verde */
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 4px 12px rgba(0, 200, 83, 0.4);
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 16px rgba(0, 200, 83, 0.6);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}
+	</style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Inclutón</h1>
+        <h2 class="year">2025</h2>
+        <p class="coming-soon">Próximamente</p>
+        <a href="https://wa.me/1234567890" class="cta-button" target="_blank" aria-label="Quiero ser parte de Inclutón 2025">
+        Quiero ser parte de Inclutón 2025
+        </a>
+    </div>
+</body>
+</html>
