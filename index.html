@@ -1,12 +1,298 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INCLUTON</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+  <link href="https://cdn.tailwindcss.com" rel="stylesheet">
 </head>
-<body>
-    <h1>Bienvenidos</h1>
-    <h2> página en construcción </h2>
+
+<body style="background: #edf2f7;color: #2A449A;">
+
+
+  <!-- **************************** NAVBAR *********************************** -->
+  <nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="https://incluton.org" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="img/logo_incluton.png" class="h-12" alt="logo incluton" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Incluton</span>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul
+          class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#evento"
+              class="block py-2 px-3 text-[#2A449A] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Evento</a>
+          </li>
+          <li>
+            <a href="#nosotros"
+              class="block py-2 px-3 text-[#2A449A] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Nosotros</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ***************************** intro ********************************************** -->
+  <section class="dark:bg-gray-900">
+    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+      <div class="mr-auto place-self-center lg:col-span-7">
+        <h1
+          class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+          Incluton 2025</h1>
+        <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Evento pionero que combina innovación, inclusión y colaboración para transformar vidas a través de
+          la accesibilidad a la tecnología. Esta edición, totalmente online, se enfoca en la inclusión digital de
+          personas con discapacidad</p>
+      </div>
+      <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+        <img class="rounded-lg" src="img/pexels-marcus-aurelius-4063789.jpg"
+          alt="Persona trabajando en silla de ruedas">
+      </div>
+    </div>
+  </section>
+
+  <!-- ***************************** evento ********************************************** -->
+
+  <section id="evento" class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+      <div class="max-w-screen-md mb-8 lg:mb-16">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-[#2A449A]">Cumbre de Inclusión Tecnológica</h2>
+        <p class="text-gray-500 sm:text-xl dark:text-gray-400">Equipos multidisciplinarios de toda la región trabajarán en línea para desarrollar prototipos tecnológicos diseñados para personas con distintas discapacidades. Las herramientas digitales facilitarán la colaboración remota, permitiendo que el talento latinoamericano trascienda fronteras</p>
+      </div>
+      <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+        <div>
+          <div
+            class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+            <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor"
+              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h3 class="mb-2 text-xl font-bold dark:text-white">Ponencias</h3>
+          <p class="text-gray-500 dark:text-gray-400">Conferencias virtuales de expertos en inclusión y tecnología</p>
+        </div>
+        <div>
+          <div
+            class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+            <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor"
+              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z">
+              </path>
+            </svg>
+          </div>
+          <h3 class="mb-2 text-xl font-bold dark:text-white">Innovacion</h3>
+          <p class="text-gray-500 dark:text-gray-400">Presentaciones de software y herramientas innovadoras adaptadas a diversas discapacidades</p>
+        </div>
+        <div>
+          <div
+            class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+            <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor"
+              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+              <path
+                d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z">
+              </path>
+            </svg>
+          </div>
+          <h3 class="mb-2 text-xl font-bold dark:text-white">Capacitación</h3>
+          <p class="text-gray-500 dark:text-gray-400">Talleres prácticos para adquirir herramientas que permitan desarrollar tecnologías más accesibles</p>
+        </div>
+        <div>
+          <div
+            class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+            <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor"
+              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+              d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"></path>
+            </svg>
+          </div>
+          <h3 class="mb-2 text-xl font-bold dark:text-white">Diseño inclusivo</h3>
+          <p class="text-gray-500 dark:text-gray-400">Mesas redondas en línea sobre accesibilidad, educación inclusiva y tecnologías emergentes</p>
+        </div>
+   
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ***************************** nosotros ********************************************** -->
+  <section id="nosotros" class="dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+      <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-[#2A449A]">Somos LATAM AI</h2>
+        <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Una comunidad tecnológica inclusiva e intergeneracional que democratiza el acceso a la ciencia, la tecnología y la inteligencia artificial (IA) en Latinoamérica. Nuestra misión es conectar talento, creatividad y propósito para crear soluciones con impacto social</p>
+      </div>
+      <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+
+
+        <div class="text-center text-gray-500 dark:text-gray-400">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-full"
+            src="img/nosotros/emmanuel.jpg" alt="Foto de Emmanuel Pulido">
+          <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <a href="https://www.linkedin.com/in/emmanuel-pulido">Emmanuel Pulido</a>
+          </h3>
+          <p>Backend Developer</p>
+          <ul class="flex justify-center mt-4 space-x-4">
+            <li>
+              <a href="https://www.linkedin.com/in/emmanuel-pulido" class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-labelledby="iconTitle_L_EP" role="img">
+                  <title id="iconTitle_L_EP">Linkedin de Emmanuel Pulido</title>
+                  <path fill-rule="evenodd"
+                  d="M 5.75 3 C 4.2400226 3 3 4.2400226 3 5.75 L 3 18.25 C 3 19.759977 4.2400226 21 5.75 21 L 18.25 21 C 19.759977 21 21 19.759977 21 18.25 L 21 5.75 C 21 4.2400226 19.759977 3 18.25 3 L 5.75 3 z M 5.75 4.5 L 18.25 4.5 C 18.950023 4.5 19.5 5.0499774 19.5 5.75 L 19.5 18.25 C 19.5 18.950023 18.950023 19.5 18.25 19.5 L 5.75 19.5 C 5.0499774 19.5 4.5 18.950023 4.5 18.25 L 4.5 5.75 C 4.5 5.0499774 5.0499774 4.5 5.75 4.5 z M 8.1855469 6.7851562 C 7.4445469 6.7851563 7 7.2293594 7 7.8183594 C 7 8.4113594 7.444375 8.8574219 8.109375 8.8574219 C 8.850375 8.8574219 9.2910156 8.4113594 9.2910156 7.8183594 C 9.2910156 7.2303594 8.8505469 6.7851562 8.1855469 6.7851562 z M 7.0625 9.9628906 L 7.0625 16 L 9.2363281 16 L 9.2363281 9.9628906 L 7.0625 9.9628906 z M 11.033203 9.9628906 L 11.033203 16 L 13.207031 16 L 13.207031 12.697266 C 13.207031 11.718266 13.908141 11.574219 14.119141 11.574219 C 14.330141 11.574219 14.892578 11.785266 14.892578 12.697266 L 14.892578 16 L 17 16 L 17 12.697266 C 17 10.806266 16.154516 9.9628906 15.103516 9.9628906 C 14.052516 9.9628906 13.490031 10.312641 13.207031 10.806641 L 13.207031 9.9628906 L 11.033203 9.9628906 z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-center text-gray-500 dark:text-gray-400">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-full"
+            src="img/nosotros/edison.jpg" alt="Foto de Edison">
+          <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <a href="https://www.linkedin.com/in/edisonvasquezd">Edison Vásquez</a>
+          </h3>
+          <p>CEO de Jhed AI</p>
+          <ul class="flex justify-center mt-4 space-x-4">
+            <li>
+              <a href="https://www.linkedin.com/in/edisonvasquezd" class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-labelledby="iconTitle_L_EV" role="img">
+                  <title id="iconTitle_L_EV">Linkedin de Edison Vásquez</title>
+                  <path fill-rule="evenodd"
+                  d="M 5.75 3 C 4.2400226 3 3 4.2400226 3 5.75 L 3 18.25 C 3 19.759977 4.2400226 21 5.75 21 L 18.25 21 C 19.759977 21 21 19.759977 21 18.25 L 21 5.75 C 21 4.2400226 19.759977 3 18.25 3 L 5.75 3 z M 5.75 4.5 L 18.25 4.5 C 18.950023 4.5 19.5 5.0499774 19.5 5.75 L 19.5 18.25 C 19.5 18.950023 18.950023 19.5 18.25 19.5 L 5.75 19.5 C 5.0499774 19.5 4.5 18.950023 4.5 18.25 L 4.5 5.75 C 4.5 5.0499774 5.0499774 4.5 5.75 4.5 z M 8.1855469 6.7851562 C 7.4445469 6.7851563 7 7.2293594 7 7.8183594 C 7 8.4113594 7.444375 8.8574219 8.109375 8.8574219 C 8.850375 8.8574219 9.2910156 8.4113594 9.2910156 7.8183594 C 9.2910156 7.2303594 8.8505469 6.7851562 8.1855469 6.7851562 z M 7.0625 9.9628906 L 7.0625 16 L 9.2363281 16 L 9.2363281 9.9628906 L 7.0625 9.9628906 z M 11.033203 9.9628906 L 11.033203 16 L 13.207031 16 L 13.207031 12.697266 C 13.207031 11.718266 13.908141 11.574219 14.119141 11.574219 C 14.330141 11.574219 14.892578 11.785266 14.892578 12.697266 L 14.892578 16 L 17 16 L 17 12.697266 C 17 10.806266 16.154516 9.9628906 15.103516 9.9628906 C 14.052516 9.9628906 13.490031 10.312641 13.207031 10.806641 L 13.207031 9.9628906 L 11.033203 9.9628906 z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        
+        <div class="text-center text-gray-500 dark:text-gray-400">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-full"
+            src="img/nosotros/cote.jpg" alt="Foto de María José Paschcuan">
+          <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <a href="https://www.linkedin.com/in/paskuvan/">María José Paschcuan</a>
+          </h3>
+          <p>Frontend Developer / Designer</p>
+          <ul class="flex justify-center mt-4 space-x-4">
+            <li>
+              <a href="https://www.linkedin.com/in/paskuvan/" class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-labelledby="iconTitle_L_MJ" role="img">
+                  <title id="iconTitle_L_MJ">Linkedin de María José Paschcuan</title>
+                  <path fill-rule="evenodd"
+                  d="M 5.75 3 C 4.2400226 3 3 4.2400226 3 5.75 L 3 18.25 C 3 19.759977 4.2400226 21 5.75 21 L 18.25 21 C 19.759977 21 21 19.759977 21 18.25 L 21 5.75 C 21 4.2400226 19.759977 3 18.25 3 L 5.75 3 z M 5.75 4.5 L 18.25 4.5 C 18.950023 4.5 19.5 5.0499774 19.5 5.75 L 19.5 18.25 C 19.5 18.950023 18.950023 19.5 18.25 19.5 L 5.75 19.5 C 5.0499774 19.5 4.5 18.950023 4.5 18.25 L 4.5 5.75 C 4.5 5.0499774 5.0499774 4.5 5.75 4.5 z M 8.1855469 6.7851562 C 7.4445469 6.7851563 7 7.2293594 7 7.8183594 C 7 8.4113594 7.444375 8.8574219 8.109375 8.8574219 C 8.850375 8.8574219 9.2910156 8.4113594 9.2910156 7.8183594 C 9.2910156 7.2303594 8.8505469 6.7851562 8.1855469 6.7851562 z M 7.0625 9.9628906 L 7.0625 16 L 9.2363281 16 L 9.2363281 9.9628906 L 7.0625 9.9628906 z M 11.033203 9.9628906 L 11.033203 16 L 13.207031 16 L 13.207031 12.697266 C 13.207031 11.718266 13.908141 11.574219 14.119141 11.574219 C 14.330141 11.574219 14.892578 11.785266 14.892578 12.697266 L 14.892578 16 L 17 16 L 17 12.697266 C 17 10.806266 16.154516 9.9628906 15.103516 9.9628906 C 14.052516 9.9628906 13.490031 10.312641 13.207031 10.806641 L 13.207031 9.9628906 L 11.033203 9.9628906 z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        
+
+        <div class="text-center text-gray-500 dark:text-gray-400">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-full"
+            src="img/nosotros/julio.jpg" alt="Foto de Julio Hofflinger">
+          <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <a href="https://www.linkedin.com/in/julio-hofflinger">Julio Hofflinger</a>
+          </h3>
+          <p>Manager</p>
+          <ul class="flex justify-center mt-4 space-x-4">
+            <li>
+              <a href="https://www.linkedin.com/in/julio-hofflinger" class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-labelledby="iconTitle_L_JH" role="img">
+                  <title id="iconTitle_L_JH">Linkedin de Julio Hofflinger</title>
+                  <path fill-rule="evenodd"
+                  d="M 5.75 3 C 4.2400226 3 3 4.2400226 3 5.75 L 3 18.25 C 3 19.759977 4.2400226 21 5.75 21 L 18.25 21 C 19.759977 21 21 19.759977 21 18.25 L 21 5.75 C 21 4.2400226 19.759977 3 18.25 3 L 5.75 3 z M 5.75 4.5 L 18.25 4.5 C 18.950023 4.5 19.5 5.0499774 19.5 5.75 L 19.5 18.25 C 19.5 18.950023 18.950023 19.5 18.25 19.5 L 5.75 19.5 C 5.0499774 19.5 4.5 18.950023 4.5 18.25 L 4.5 5.75 C 4.5 5.0499774 5.0499774 4.5 5.75 4.5 z M 8.1855469 6.7851562 C 7.4445469 6.7851563 7 7.2293594 7 7.8183594 C 7 8.4113594 7.444375 8.8574219 8.109375 8.8574219 C 8.850375 8.8574219 9.2910156 8.4113594 9.2910156 7.8183594 C 9.2910156 7.2303594 8.8505469 6.7851562 8.1855469 6.7851562 z M 7.0625 9.9628906 L 7.0625 16 L 9.2363281 16 L 9.2363281 9.9628906 L 7.0625 9.9628906 z M 11.033203 9.9628906 L 11.033203 16 L 13.207031 16 L 13.207031 12.697266 C 13.207031 11.718266 13.908141 11.574219 14.119141 11.574219 C 14.330141 11.574219 14.892578 11.785266 14.892578 12.697266 L 14.892578 16 L 17 16 L 17 12.697266 C 17 10.806266 16.154516 9.9628906 15.103516 9.9628906 C 14.052516 9.9628906 13.490031 10.312641 13.207031 10.806641 L 13.207031 9.9628906 L 11.033203 9.9628906 z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        
+        <div class="text-center text-gray-500 dark:text-gray-400">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-full"
+            src="img/nosotros/henry.jpg" alt="Foto de Henry Tong">
+          <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <a href="https://www.linkedin.com/in/henry-tong-info">Henry Tong</a>
+          </h3>
+          <p>Consultor de TI</p>
+          <ul class="flex justify-center mt-4 space-x-4">
+            <li>
+              <a href="https://www.linkedin.com/in/henry-tong-info" class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-labelledby="iconTitle_L_HT" role="img">
+                  <title id="iconTitle_L_HT">Linkedin de Henry Tong</title>
+                  <path fill-rule="evenodd"
+                  d="M 5.75 3 C 4.2400226 3 3 4.2400226 3 5.75 L 3 18.25 C 3 19.759977 4.2400226 21 5.75 21 L 18.25 21 C 19.759977 21 21 19.759977 21 18.25 L 21 5.75 C 21 4.2400226 19.759977 3 18.25 3 L 5.75 3 z M 5.75 4.5 L 18.25 4.5 C 18.950023 4.5 19.5 5.0499774 19.5 5.75 L 19.5 18.25 C 19.5 18.950023 18.950023 19.5 18.25 19.5 L 5.75 19.5 C 5.0499774 19.5 4.5 18.950023 4.5 18.25 L 4.5 5.75 C 4.5 5.0499774 5.0499774 4.5 5.75 4.5 z M 8.1855469 6.7851562 C 7.4445469 6.7851563 7 7.2293594 7 7.8183594 C 7 8.4113594 7.444375 8.8574219 8.109375 8.8574219 C 8.850375 8.8574219 9.2910156 8.4113594 9.2910156 7.8183594 C 9.2910156 7.2303594 8.8505469 6.7851562 8.1855469 6.7851562 z M 7.0625 9.9628906 L 7.0625 16 L 9.2363281 16 L 9.2363281 9.9628906 L 7.0625 9.9628906 z M 11.033203 9.9628906 L 11.033203 16 L 13.207031 16 L 13.207031 12.697266 C 13.207031 11.718266 13.908141 11.574219 14.119141 11.574219 C 14.330141 11.574219 14.892578 11.785266 14.892578 12.697266 L 14.892578 16 L 17 16 L 17 12.697266 C 17 10.806266 16.154516 9.9628906 15.103516 9.9628906 C 14.052516 9.9628906 13.490031 10.312641 13.207031 10.806641 L 13.207031 9.9628906 L 11.033203 9.9628906 z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- *********************** FOOTER **************************** -->
+  <footer class="fixed bottom-0 left-0 z-20 w-full p-4 bg-white sm:p-1 dark:bg-gray-800">
+    <div class="flex items-center justify-center space-x-6">
+
+      <p>Encuéntranos en nuestras redes</p>
+      <a href="https://www.youtube.com/@ComunidadLATAMAI"
+        class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="-4 -4 24 24" aria-labelledby="iconTitleYT" role="img">
+          <title id="iconTitleYT">Youtube</title>
+          <path fill-rule="evenodd"
+            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+            clip-rule="evenodd" />
+        </svg>
+      </a>
+      <a href="https://chat.whatsapp.com/Ev9odVGVeoHEuFX9dLkGUF"
+        class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="-4 -4 24 24" aria-labelledby="iconTitle1" role="img">
+          <title id="iconTitle1">Whatsapp</title>
+          <path fill-rule="evenodd"
+            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+            clip-rule="evenodd" />
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/company/comunidad-latam-ai"
+        class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-labelledby="iconTitle2" role="img">
+          <title id="iconTitle2">Linkedin</title>
+          <path fill-rule="evenodd"
+            d="M 5.75 3 C 4.2400226 3 3 4.2400226 3 5.75 L 3 18.25 C 3 19.759977 4.2400226 21 5.75 21 L 18.25 21 C 19.759977 21 21 19.759977 21 18.25 L 21 5.75 C 21 4.2400226 19.759977 3 18.25 3 L 5.75 3 z M 5.75 4.5 L 18.25 4.5 C 18.950023 4.5 19.5 5.0499774 19.5 5.75 L 19.5 18.25 C 19.5 18.950023 18.950023 19.5 18.25 19.5 L 5.75 19.5 C 5.0499774 19.5 4.5 18.950023 4.5 18.25 L 4.5 5.75 C 4.5 5.0499774 5.0499774 4.5 5.75 4.5 z M 8.1855469 6.7851562 C 7.4445469 6.7851563 7 7.2293594 7 7.8183594 C 7 8.4113594 7.444375 8.8574219 8.109375 8.8574219 C 8.850375 8.8574219 9.2910156 8.4113594 9.2910156 7.8183594 C 9.2910156 7.2303594 8.8505469 6.7851562 8.1855469 6.7851562 z M 7.0625 9.9628906 L 7.0625 16 L 9.2363281 16 L 9.2363281 9.9628906 L 7.0625 9.9628906 z M 11.033203 9.9628906 L 11.033203 16 L 13.207031 16 L 13.207031 12.697266 C 13.207031 11.718266 13.908141 11.574219 14.119141 11.574219 C 14.330141 11.574219 14.892578 11.785266 14.892578 12.697266 L 14.892578 16 L 17 16 L 17 12.697266 C 17 10.806266 16.154516 9.9628906 15.103516 9.9628906 C 14.052516 9.9628906 13.490031 10.312641 13.207031 10.806641 L 13.207031 9.9628906 L 11.033203 9.9628906 z"
+            clip-rule="evenodd" />
+        </svg>
+      </a>
+
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </body>
+
 </html>
